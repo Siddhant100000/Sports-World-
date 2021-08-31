@@ -11,6 +11,7 @@ import Payment from "./Subtotal/Payment/Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders/Orders";
+import Slider from "./Slider";
 
 const promise = loadStripe(
   "pk_test_51JTq1wSFXfBk6YJLMZtJcO1hHDLOqGIaOURCNFSV5EJVsHxhGBIO1GMwDpnvy3UhCUkdE7xqKXUedlTdIaOjY3ov00DzsOefNm"
@@ -48,6 +49,7 @@ function App() {
           </Route>
           <Route path="/orders">
             <Header />
+
             <Orders />
           </Route>
           <Route path="/checkout">
@@ -61,7 +63,11 @@ function App() {
             </Elements>
           </Route>
           <Route path="/">
-            <Header />
+            <Header
+              image={
+                "https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+              }
+            />
             <Home />
           </Route>
         </Switch>

@@ -9,6 +9,8 @@ import { auth } from "../firebase";
 function Header() {
   const [{ basket, user }] = useStateValue();
 
+  const handleChnage = () => {};
+
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
@@ -24,7 +26,11 @@ function Header() {
         />
       </Link>
       <div className="header__search">
-        <input className="header__searchInput" type="text" />
+        <input
+          className="header__searchInput"
+          type="text"
+          onChange={handleChnage}
+        />
         <SearchIcon className="header__searchIcon" />
       </div>
 
