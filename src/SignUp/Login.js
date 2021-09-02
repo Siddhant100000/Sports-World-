@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
+import Logo1 from "../Images/Logo1.jpeg";
 
 function Login() {
   const history = useHistory();
@@ -36,11 +37,7 @@ function Login() {
   return (
     <div className="login">
       <Link to="/">
-        <img
-          className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-          alt="Login Logo"
-        />
+        <img className="login__logo" src={Logo1} alt="Login Logo" />
       </Link>
 
       <div className="login__container">
@@ -77,7 +74,7 @@ function Login() {
         </p>
 
         <button onClick={register} className="login__registerButton">
-          Create your Amazon Account
+          Create your Sports-World Account
         </button>
       </div>
     </div>

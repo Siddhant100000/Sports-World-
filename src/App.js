@@ -47,14 +47,12 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/orders">
-            <Header />
-
-            <Orders />
-          </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/orders">
+            <Orders />
           </Route>
           <Route path="/payment">
             <Header />
@@ -63,11 +61,8 @@ function App() {
             </Elements>
           </Route>
           <Route path="/">
-            <Header
-              image={
-                "https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
-              }
-            />
+            <Header />
+            <Slider />
             <Home />
           </Route>
         </Switch>

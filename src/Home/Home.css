@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
+    background-color: rgb(234,237,237);
 
 }
 
@@ -15,12 +16,12 @@
 }
 
 
-.home__image{
+/* .home__image{
     width:100%;
-    /* z-index:; */
+    z-index:;
     margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-}
+} */
 
 /* .carasol__container{
     width: 100%;

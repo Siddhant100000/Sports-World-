@@ -2,7 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: rgb(26, 13, 13);
+    background-color: #004aad;
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -12,7 +12,7 @@
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 
 .header__searchIcon{
@@ -33,12 +33,12 @@
     height: 24px;
     padding: 10px;
     border: none;
-    width:100%;
+    width: 100%;
 }
 
 .header__nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly ;
 }
 
 .header__option{
@@ -62,6 +62,7 @@
     display: flex;
     color: white;
     align-items: center;
+    
 }
 
 .header__optionBasketCount{

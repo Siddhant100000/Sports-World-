@@ -1,105 +1,75 @@
-import { Carousel } from "bootstrap";
 import React from "react";
 import Product from "../Product/Product";
 import "./Home.css";
+import bat1 from "../Images/bat1.jpg";
+import bat2 from "../Images/bat2.jpg";
+import bat3 from "../Images/bat3.jpg";
 
 function Home() {
   return (
     <div className="home ">
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
       {/* <h1>I am the home Compo</h1> */}
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-          alt=""
-        />
         <div className="home__row">
           <Product
             id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            title="Nike Mercurial Veloce III DF CR7 FG Football Shoes"
+            price={10000}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image="https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK852518-001.jpg"
           />
           <Product
             id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
+            title="Nike Strike Football (White/Blue)"
+            price={300}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="https://storage.sg.content-cdn.io/cdn-cgi/image/width=780,height=780,quality=75,format=auto/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKSC2983-135.jpg"
           />
-          {/* <Product /> */}
-          {/* Product */}
         </div>
         <div className="home__row">
           <Product
             id="4903850"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
+            title="Adidas All Court Basketball (Size 7)"
+            price={2000}
             rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            image="https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADX35859L.jpg"
           />
           <Product
             id="23445930"
-            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
-            price={98.99}
+            title="Nike Zoom Devosion Basketball Shoes (Black/Silver/Volt)"
+            price={6000}
             rating={5}
-            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+            image="https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK844592-002.jpg"
           />
           <Product
             id="3254354345"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
+            title="Stag Solid Steel Basketball Ring (20 mm)"
+            price={4000}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+            image="https://storage.sg.content-cdn.io/cdn-cgi/image/width=780,height=780,quality=75,format=auto/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/STABBRSS20.jpg"
           />
         </div>
         <div className="home__row">
           <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
+            id="1254354345"
+            title="Sg bat is the a good begginer level bat provides great grip with a solid stroke"
+            price={4000}
+            rating={3}
+            image={bat1}
+          />
+          <Product
+            id="1254354348"
+            title="Mrf bats are a mid level bat that provide an amature player all the tools to make the best play he can"
+            price={8000}
+            rating={3}
+            image={bat2}
+          />
+          <Product
+            id="1254354349"
+            title="Adidas Bats are bats made for the professional player, many big names such as Rahul Dravid and Sachin Tendulkar endorse this bat "
+            price={10000}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+            image={bat3}
           />
         </div>
       </div>
@@ -108,99 +78,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* 
-      <div className="home__container">
-        <div className="carasol__container">
-          <div
-            id="carouselExampleCaptions"
-            className="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                className="active"
-                aria-label="Slide 1"
-                aria-current="true"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-                className=""
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-                className=""
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item carousel-item-next carousel-item-start">
-                <img
-                  src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
-                  className="d-block w-100"
-                  alt=""
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h2>Welcome to iCoder</h2>
-                  <p>Technology, Devlopment and Trends</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h2>The best coding block</h2>
-                  <p>Technology, Devlopment and Trends</p>
-                </div>
-              </div>
-              <div className="carousel-item active carousel-item-start">
-                <img
-                  src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
-                  className="d-block w-100"
-                  alt="..."
-                />
-                <div className="carousel-caption d-none d-md-block">
-                  <h2>Award Winning Blog</h2>
-                  <p>Technology, Devlopment and Trends</p>
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div> */
-}

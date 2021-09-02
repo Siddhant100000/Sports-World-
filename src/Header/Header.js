@@ -5,6 +5,8 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
+// import logo from "../Images/Logo.jpeg";
+import logo from "../Images/Logo1.jpeg";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
@@ -19,11 +21,7 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img
-          className="header__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-          alt="Amazon Logo"
-        />
+        <img className="header__logo" src={logo} alt="Amazon Logo" />
       </Link>
       <div className="header__search">
         <input
@@ -48,10 +46,6 @@ function Header() {
         <div className="header__option">
           <span className="header__optionLineOne">Returns</span>
           <span className="header__optionLineTwo">Orders</span>
-        </div>
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
         </div>
       </div>
       <div className="header_optionBasket">
